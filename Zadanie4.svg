@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="700" height="500" 
+    viewBox="0 0 400 400"
+    preserveAspectRatio="xMidYMid">
+ 
+    <defs>
+        <g id = "polygon" stroke="black" fill="orange" stroke-width="2"> 
+        <!--tworzenie pomarańczowego wielokąta o czarnym obwodzie-->
+            <animateTransform attributeName = "transform" type = "rotate"
+                from = "0" to ="360"
+                dur = "5s" repeatCount = "indefinite" /> <!--wielokąt animowany (obraca się) o 360 stopni w nieskończoność-->
+            <polygon points= "29,3 23,18 11,27 -3,29 -18,23 -27,11 -29,-3 -23,-18 -11,-27 3,-29 18,-23 27,-11">
+        </g> <!--wierzchołki wielokąta, wyznaczone przy pomocy kodu z poprzedniego ćwiczenia-->
+        <g id = "line" stroke-width="10" >  <!--grubość prostokątów (lini)-->
+            <line x1="-100" x2="100" y1="0" y2="0"/> <!--i ich położenie-->
+        </g>
+        
+        <g id = "triangle">  <!--wyznaczenie wierzchołków trójkątów-->
+            <polygon points="0,-100 86.6,50 -86.6,50" />
+        </g>
+    
+        <g id = "object"> <!-- dsa-->
+            <use xlink:href="#polygon" transform="rotate(20) translate(80,0)"/>
+            <!--ustawienia kół po prawej wszystkich trzech figur-->
+            <use xlink:href="#polygon" transform="rotate(20) translate(-80,0)"/>
+            <!--ustawienia kół po lewej wszystkich trzech figur-->
+            <use xlink:href="#line" transform = "rotate(20) scale(0.8,1)" stroke = "red"/>
+            <!--ustawienie czerwonegto koloru i zmiana obrotu i położenia prostokątów-->
+            <use xlink:href="#triangle" transform="translate(0,70) scale(0.25,0.7)"/>
+            <!--ustawienia trójkątów wszystkich trzech figur-->
+        </g>
+    </defs>
+    
+        <use xlink:href="#object" transform="translate(190,250) scale(0.7)" fill="blue"/>
+        <use xlink:href="#object" transform="translate(50,150) scale(0.65)" fill="purple" />
+        <use xlink:href="#object" transform="translate(300,150) scale(0.6)" fill="green"/>
+        <!--ustawienia kół po prawej wszystkich trzech figur-->    
+</svg>

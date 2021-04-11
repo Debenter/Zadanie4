@@ -38,5 +38,5 @@
         <use xlink:href="#object" transform="translate(190,250) scale(0.7)" fill="blue"/>
         <use xlink:href="#object" transform="translate(50,150) scale(0.65)" fill="purple" />
         <use xlink:href="#object" transform="translate(300,150) scale(0.6)" fill="green"/>
-        <!--ustawienia kół po prawej wszystkich trzech figur-->    
+        <!--ustawienia położenia wszystkich trzech figur (łącznych)-->    
 </svg>
